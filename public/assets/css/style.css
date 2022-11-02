@@ -1,0 +1,751 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none !important;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.logo {
+  margin: auto;
+  text-align: center;
+  background-color: #ebebeb;
+}
+.logo img {
+  padding: 20px 0px;
+  width: 150px;
+}
+
+header {
+  width: 100%;
+  background-color: #252525;
+  color: white;
+  padding: 10px 0px;
+}
+.contentHeader {
+  max-width: 1100px;
+  display: flex;
+  margin: auto;
+}
+.contentHeader ul {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.contentHeader ul li {
+  margin: 0px 30px;
+  list-style-type: none;
+  z-index: 1;
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+}
+.contentHeader ul li a {
+  text-decoration: none;
+  color: #c5c5c5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+ul li:not(:last-child)::after {
+  content: "";
+  border: 0.3px solid #c5c5c5;
+  opacity: 0.4;
+  border-width: 0px 0.3px 0 0;
+  position: absolute;
+  right: -30px;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+.interest {
+  position: relative;
+  width: 100%;
+  margin: 3rem 0px;
+  height: auto;
+}
+.imgInterest {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.imgInterest img {
+  width: 100%;
+  height: 448px;
+  object-fit: cover;
+}
+.interestContent {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: auto;
+  height: 448px;
+}
+.interestContainer {
+  width: 800px;
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.interestContentText {
+  background-color: #252525;
+  color: #c1c1c1;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px;
+  width: 50%;
+  text-align: right;
+  justify-content: center;
+}
+.interestContentText h4 {
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.interestContentText p {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  line-height: 30px;
+  text-align: right;
+  text-transform: inherit;
+}
+.interestContentForm {
+  width: 50%;
+  height: 330px;
+  margin-top: 30px;
+}
+
+.interestContentForm h2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.interestContentForm p {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #252525;
+}
+.interestContentForm h2,
+p {
+  text-align: center;
+}
+.interestContentForm form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.interestContentForm form input,
+select {
+  margin-top: 20px;
+  outline: 0;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #c1c1c1;
+  color: #c1c1c1;
+}
+.interestContentForm .all {
+  width: 100%;
+}
+
+.interestContentForm .divide {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+.check {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.check p {
+  color: #c1c1c1;
+  text-align: left;
+  font-size: 10px;
+  text-transform: capitalize;
+}
+.check input {
+  margin: 0px;
+  padding: 0px;
+  max-width: 15px;
+  margin-right: 10px;
+}
+.high {
+  background: url("../img/high.jpg") 100% / cover no-repeat;
+  width: 100%;
+  /* height: 512px; */
+  position: relative;
+  margin-top: 3rem;
+}
+.high:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0.65;
+  width: 100%;
+  height: 100%;
+}
+.highContent {
+  max-width: 1100px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: inherit;
+  padding: 7rem 0px 2rem;
+}
+.highContent p {
+  letter-spacing: 4px;
+  z-index: 1;
+  position: relative;
+  color: #c1c1c1;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 65px;
+}
+
+.store {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 8rem 0px 4rem;
+  position: relative;
+}
+.storeContent {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  height: auto;
+}
+.storeContentLeft {
+  width: 50%;
+  height: inherit;
+  position: relative;
+  z-index: 1;
+  margin-top: 15px;
+}
+.storeContentLeft p {
+  font-size: 13px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.storeContentRight {
+  width: 50%;
+}
+.logoStore {
+  gap: 20px;
+  position: absolute;
+  transform-origin: top left;
+  display: flex;
+  width: 65%;
+  left: -85px;
+  align-items: baseline;
+  transform: rotate(-90deg);
+  top: 95%;
+  justify-content: space-between;
+}
+.logoStore img {
+  height: 40px;
+}
+.lineV {
+  margin-top: 10px;
+  opacity: 0.4;
+  width: 100%;
+  border: thin solid black;
+}
+.storeContentRight {
+  position: relative;
+  display: flex;
+  z-index: 99;
+  justify-content: space-between;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  z-index: 99;
+  width: 100%;
+}
+.slideSingle {
+  display: flex;
+}
+.slide img {
+  width: 100%;
+  object-fit: cover;
+}
+.backgroundSlide {
+  background-color: #252525;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  top: 53%;
+  z-index: 0;
+  height: 55%;
+}
+
+.relation {
+  height: auto;
+  position: relative;
+  margin: 5rem auto 2rem;
+  width: 100%;
+}
+.relationContent {
+  margin: auto;
+  max-width: 1100px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+}
+.relationLeft {
+  width: 60%;
+  z-index: 2;
+}
+.relationLeft img {
+  width: 100%;
+  display: block;
+}
+.relationRight {
+  width: 40%;
+  max-width: 40%;
+}
+.backgroundRelation {
+  background-color: #252525;
+  position: absolute;
+  width: 52%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  top: 50%;
+  z-index: 0;
+  height: 110%;
+  display: flex;
+  z-index: 1;
+}
+.relationRight h1 {
+  letter-spacing: 6px;
+  font-weight: 100;
+  font-size: 33px;
+  text-transform: uppercase;
+  line-height: 55px;
+}
+
+.moreText {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.moreText p {
+  text-align: right;
+}
+.moreTextContent {
+  max-width: 1100px;
+  margin: auto;
+}
+.leftSide {
+  width: 52%;
+}
+.infos {
+  max-width: 1100px;
+  margin: 6rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 80px;
+}
+.singleInfo {
+  flex-grow: 1;
+  width: 33%;
+  max-width: 260px;
+  flex-direction: column;
+}
+
+.singleInfoTop {
+  display: flex;
+  position: relative;
+}
+.singleInfoTop img {
+  height: 40px;
+  margin-right: 30px;
+}
+.singleInfoTop h3 {
+  font-size: 15px;
+  font-weight: 600;
+  max-width: 100px;
+  line-height: 20px;
+}
+.singleInfoTop::after {
+  content: "";
+  width: 1px;
+  top: 0;
+  height: 100%;
+  background: #252525;
+  position: absolute;
+  left: 100%;
+}
+.singleInfoBottom p {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+.unicasa {
+  margin-top: 3rem;
+  position: relative;
+  width: 100%;
+}
+.unicasa img {
+  width: 91%;
+  position: relative;
+  z-index: 2;
+}
+.uniImg {
+  margin-top: 6rem;
+}
+.backgroundUnicasa {
+  background: #252525;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+.unicasaText {
+  width: 100%;
+  margin-top: -10px;
+  position: relative;
+  background-color: #ebebeb;
+}
+.unicasaContent {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 135px;
+  padding: 100px 0px 90px;
+}
+.unicasaLeft {
+  width: 50%;
+  display: flex;
+  position: relative;
+  padding-right: 40px;
+  justify-content: flex-end;
+}
+.unicasaLeft p {
+  max-width: 330px;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 60px;
+  text-align: right;
+  letter-spacing: 3px;
+  color: #2e2e2e;
+}
+.unicasaRight {
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  padding-left: 40px;
+  color: white;
+}
+.unicasaRight p {
+  text-align: justify;
+  font-size: 13px;
+  margin-bottom: 15px;
+  line-height: 30px;
+  color: #c1c1c1;
+}
+.backgroundUnicasaText {
+  background: #252525;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+.logoStore h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.unicasaLeft .logoStore {
+  width: 92%;
+  top: 97%;
+}
+.unicasaLeft .lineV {
+  margin-top: 0px;
+}
+.backgroundGrey {
+  background-color: #ebebeb;
+  padding: 3rem 0px;
+}
+.presentation {
+  position: relative;
+  width: 100%;
+  background: url("../img/dellannoatelier-bg.jpg") 100% / cover no-repeat;
+  padding: 7rem 0px;
+}
+/* .presentation:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+} */
+.presentationContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: baseline;
+  gap: 200px;
+}
+.presentationLeft {
+  width: 50%;
+}
+.presentationLeft h2 {
+  margin: auto;
+  text-align: right;
+  font-size: 24px;
+  color: #c1c1c1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-weight: 100;
+}
+.presentationRight {
+  width: 50%;
+}
+.presentationRightContent {
+  margin-bottom: 40px;
+}
+
+.openArrow {
+  transition: all ease 0.3s;
+  transform: rotate(315deg);
+}
+
+ul.ulPresentation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+ul.ulPresentation li {
+  position: relative;
+  color: #c1c1c1;
+}
+ul.ulPresentation li:before {
+  content: "";
+  z-index: 100;
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  /* background: #c1c1c1; */
+  border: 1px solid #c1c1c1;
+  position: absolute;
+  left: -50px;
+  top: 5px;
+  border-radius: 10px;
+}
+ul.ulPresentation li:after {
+  display: none;
+}
+.ulPresentation p {
+  text-align: left;
+  margin: 10px 0px;
+  color: #c1c1c1;
+  position: relative;
+  max-width: 350px;
+}
+.line {
+}
+.lineP {
+  position: relative;
+  min-height: 30px;
+  transition: all ease 0.4s;
+}
+
+.lineP:before {
+  transition: all ease 0.4s;
+  content: "";
+  z-index: 1;
+  display: inline-block;
+  width: 1px;
+  background: #c1c1c1;
+  position: absolute;
+  left: -44px;
+  top: 0px;
+  height: calc(100%);
+}
+
+.faq {
+  background-color: #c1c1c1;
+  padding: 7.5rem 0px;
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.faqContainer {
+  background-color: #252525;
+  width: 100%;
+  padding: 50px 0px;
+}
+.faqContent {
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faqContentLeft {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+  color: #585858;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.faqContentLeft p {
+  text-align: left;
+  max-width: 80%;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.faqContentRight {
+  width: 39%;
+  background-color: #ebebeb;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 30%), 0 0px 10px rgb(0 0 0 / 22%);
+  -webkit-box-shadow: 0 5px 30px rgb(0 0 0 / 30%), 0 0px 10px rgb(0 0 0 / 22%);
+  padding: 60px 50px 20px;
+  height: auto;
+  top: -95px;
+}
+.faqArrow {
+  margin-left: 0px;
+  margin-right: 20px;
+  width: 8px;
+  height: 8px;
+  margin-top: 0px;
+}
+.faqContentLeftSingle {
+  margin-bottom: 30px;
+}
+.closeFaqText {
+  display: none;
+  margin-bottom: 5px;
+}
+.closeText {
+  display: none;
+  margin-bottom: 5px;
+}
+
+.faqContentLeft .logoStore {
+  width: 25%;
+  color: white;
+  top: 100%;
+}
+.faqContentLeft .lineV {
+  border: thin solid white;
+}
+.formFooter {
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+  margin-top: 0px;
+}
+footer {
+  background-color: #252525;
+  width: 100%;
+  padding: 10px 0px;
+}
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: auto;
+  font-size: 13px;
+  color: #c1c1c1 !important;
+}
+.footerContent p {
+  font-size: 13px;
+  color: #c1c1c1 !important;
+}
+.faqContentLeftSingle:last-child {
+  margin-bottom: 0px;
+}
+.interestContentForm button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 4px;
+  outline: 0;
+  color: #252525;
+  margin: 30px 0px;
+  text-transform: uppercase;
+}
+::placeholder {
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+
+.presentationArrow {
+  border: solid 1.5px #c1c1c1;
+  border-bottom: none;
+  border-left: none;
+  width: 12px;
+  height: 12px;
+  transform: rotate(134deg);
+  transition: all ease 0.3s;
+  cursor: pointer;
+  margin-top: -8px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.faqArrow {
+  border: solid 1.5px #c1c1c1;
+  border-bottom: none;
+  border-left: none;
+  width: 12px;
+  height: 12px;
+  transform: rotate(134deg);
+  transition: all ease 0.3s;
+  cursor: pointer;
+  margin-top: -8px;
+  cursor: pointer;
+}
+.presentationArrowActive {
+  transition: all ease 0.3s !important;
+  transform: rotate(315deg) !important;
+}
